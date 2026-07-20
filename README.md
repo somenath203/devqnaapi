@@ -33,14 +33,14 @@ No sign-up. No API key. Just fetch and go. ⚡
 
 ## 🎯 Purpose of the Project
 
-This project was built to solve a simple problem: sometimes you need a **real, working API** to practice with instead of placeholder values like `"foo"` or `"bar"`.
+**{DevQnA} API** was built to provide developers with a simple, ready-to-use REST API for learning, testing, and building applications.
 
-**{DevQnA} API** gives developers something more useful to work with:
+It can be used to:
 
 - 🧪 Test frontend applications using realistic, structured data
-- 📚 Showcase a live API example in your GitHub projects
-- 🛠️ Practice CRUD operations (Create, Read, Update, Delete)
-- 🎓 Explore real coding interview questions while learning REST APIs
+- 📚 Showcase a live API in GitHub projects, tutorials, or demos
+- 🛠️ Practice REST APIs and CRUD operations (Create, Read, Update, Delete)
+- 🎓 Explore real coding interview questions while preparing for technical interviews
 
 ---
 
