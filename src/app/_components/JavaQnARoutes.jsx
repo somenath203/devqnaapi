@@ -25,7 +25,10 @@ const javaRoutes = [
     href: `${baseURL}/api/javaqna?difficultyLevel=easy`,
     hrefTitle: "/api/javaqna?difficultyLevel=easy",
     method: "GET",
-    example: `fetch("${baseURL}/api/javaqna?difficultyLevel=easy")
+    example: `// Query Parameter:
+// difficultyLevel = easy | moderate | tough
+
+fetch("${baseURL}/api/javaqna?difficultyLevel=easy")
   .then((response) => response.json())
   .then((json) => console.log(json));`,
   },

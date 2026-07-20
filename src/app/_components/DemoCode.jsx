@@ -92,24 +92,24 @@ const DemoCode = () => {
           {shouldShowResultOfTestCode ? (
             <pre className="font-mono text-base leading-8 text-gray-200 whitespace-pre-wrap wrap-break-word">
   {`{`}
-  {"\n"}{" "} <span className="text-red-400">{'"success"'}</span>:{" "}
+  {"\n"}{" "} <span className="text-red-400">{'"success"'}</span>:{" "}{" "}
   <span className="text-violet-300">true</span>,
-  {"\n"}{" "} <span className="text-red-400">{'"message"'}</span>:{" "}
+  {"\n"}{" "} <span className="text-red-400">{'"message"'}</span>:{" "}{" "}
   <span className="text-yellow-200">{'"Connection to Python route successful."'}</span>,
   {"\n"}{" "} <span className="text-red-400">{'"qnadata"'}</span>: {`{`}
-  {"\n"}{" "}{" "} <span className="text-red-400">{'"id"'}</span>:{" "}
+  {"\n"}{" "}{" "} <span className="text-red-400">{'"id"'}</span>:{" "}{" "}
   <span className="text-green-300">1</span>,
-  {"\n"}{" "}{" "} <span className="text-red-400">{'"question"'}</span>:{" "}
+  {"\n"}{" "}{" "} <span className="text-red-400">{'"question"'}</span>:{" "}{" "}
   <span className="text-yellow-200">
     {'"How do you define a variable in Python?"'}
   </span>,
-  {"\n"}{" "}{" "} <span className="text-red-400">{'"answer"'}</span>:{" "}
+  {"\n"}{" "}{" "} <span className="text-red-400">{'"answer"'}</span>:{" "}{" "}
   <span className="text-yellow-200">
     {
-      '"A variable stores a value that can be used later in the program."'
+      '"A variable is created by assigning a value using the = operator."'
     }
   </span>,
-  {"\n"}{" "}{" "} <span className="text-red-400">{'"difficulty"'}</span>:{" "}
+  {"\n"}{" "}{" "} <span className="text-red-400">{'"difficulty"'}</span>:{" "}{" "}
   <span className="text-yellow-200">{'"easy"'}</span>
   {"\n"}
   {`}`}

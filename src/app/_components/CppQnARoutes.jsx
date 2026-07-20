@@ -2,39 +2,42 @@ import ApiRoutesList from "./ApiRoutesList";
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
-const pythonRoutes = [
+const cppRoutes = [
   {
-    href: `${baseURL}/api/pythonqna`,
-    hrefTitle: "/api/pythonqna",
+    href: `${baseURL}/api/cplusplusqna`,
+    hrefTitle: "/api/cplusplusqna",
     method: "GET",
-    example: `fetch("${baseURL}/api/pythonqna")
+    example: `fetch("${baseURL}/api/cplusplusqna")
   .then((response) => response.json())
   .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna/1`,
-    hrefTitle: "/api/pythonqna/1",
+    href: `${baseURL}/api/cplusplusqna/1`,
+    hrefTitle: "/api/cplusplusqna/1",
     method: "GET",
-    example: `fetch("${baseURL}/api/pythonqna/1")
+    example: `fetch("${baseURL}/api/cplusplusqna/1")
   .then((response) => response.json())
   .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna?difficultyLevel=easy`,
-    hrefTitle: "/api/pythonqna?difficultyLevel=easy",
+    href: `${baseURL}/api/cplusplusqna?difficultyLevel=easy`,
+    hrefTitle: "/api/cplusplusqna?difficultyLevel=easy",
     method: "GET",
     example: `// Query Parameter:
 // difficultyLevel = easy | moderate | tough
 
-fetch("${baseURL}/api/pythonqna?difficultyLevel=easy")
+fetch("${baseURL}/api/cplusplusqna?difficultyLevel=easy")
   .then((response) => response.json())
   .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna`,
-    hrefTitle: "/api/pythonqna",
+    href: `${baseURL}/api/cplusplusqna`,
+    hrefTitle: "/api/cplusplusqna",
     method: "POST",
-    example: `fetch("${baseURL}/api/pythonqna", {
+    example: `fetch("${baseURL}/api/cplusplusqna", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -48,11 +51,12 @@ fetch("${baseURL}/api/pythonqna?difficultyLevel=easy")
 .then((response) => response.json())
 .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna/1`,
-    hrefTitle: "/api/pythonqna/1",
+    href: `${baseURL}/api/cplusplusqna/1`,
+    hrefTitle: "/api/cplusplusqna/1",
     method: "PUT",
-    example: `fetch("${baseURL}/api/pythonqna/1", {
+    example: `fetch("${baseURL}/api/cplusplusqna/1", {
   method: "PUT",
   headers: {
     "Content-Type": "application/json",
@@ -66,11 +70,12 @@ fetch("${baseURL}/api/pythonqna?difficultyLevel=easy")
 .then((response) => response.json())
 .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna/1`,
-    hrefTitle: "/api/pythonqna/1",
+    href: `${baseURL}/api/cplusplusqna/1`,
+    hrefTitle: "/api/cplusplusqna/1",
     method: "PATCH",
-    example: `fetch("${baseURL}/api/pythonqna/1", {
+    example: `fetch("${baseURL}/api/cplusplusqna/1", {
   method: "PATCH",
   headers: {
     "Content-Type": "application/json",
@@ -82,11 +87,12 @@ fetch("${baseURL}/api/pythonqna?difficultyLevel=easy")
 .then((response) => response.json())
 .then((json) => console.log(json));`,
   },
+
   {
-    href: `${baseURL}/api/pythonqna/1`,
-    hrefTitle: "/api/pythonqna/1",
+    href: `${baseURL}/api/cplusplusqna/1`,
+    hrefTitle: "/api/cplusplusqna/1",
     method: "DELETE",
-    example: `fetch("${baseURL}/api/pythonqna/1", {
+    example: `fetch("${baseURL}/api/cplusplusqna/1", {
   method: "DELETE",
 })
 .then((response) => response.json())
@@ -94,8 +100,9 @@ fetch("${baseURL}/api/pythonqna?difficultyLevel=easy")
   },
 ];
 
-const PythonQnARoutes = () => {
-  return <ApiRoutesList title="Python Routes" routes={pythonRoutes} />;
+
+const CppQnARoutes = () => {
+  return <ApiRoutesList title="C++ Routes" routes={cppRoutes} />;
 };
 
-export default PythonQnARoutes;
+export default CppQnARoutes;

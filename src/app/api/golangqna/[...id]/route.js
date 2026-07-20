@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { javaQuestionAnswers } from "@/qnas/JavaQnAData";
+import { golangQuestionAnswers } from "@/qnas/GolangQnAData";
 
 
 export async function GET(request, { params }) {
@@ -11,14 +11,14 @@ export async function GET(request, { params }) {
 
     const idOfTheParticularQnA = Number(id[0]);
 
-    const particularQnAWrtId = javaQuestionAnswers.find(
+    const particularQnAWrtId = golangQuestionAnswers.find(
       (qna) => qna.id === idOfTheParticularQnA
     );
 
     return NextResponse.json(
       {
         success: true,
-        message: "Connection to JAVA QnA route successful.",
+        message: "Connection to Golang QnA route successful.",
         qnadata: particularQnAWrtId,
       },
       { status: 200 }
@@ -54,14 +54,14 @@ export async function PUT(request, { params }) {
     const body = await request.json();
 
 
-    const particularQnA = javaQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
+    const particularQnA = golangQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
 
     if (!particularQnA) {
 
       return NextResponse.json(
         {
           success: false,
-          message: "JAVA QnA not found.",
+          message: "Golang QnA not found.",
         },
         { status: 404 }
       );
@@ -80,7 +80,7 @@ export async function PUT(request, { params }) {
     return NextResponse.json(
       {
         success: true,
-        message: "JAVA QnA updated successfully.",
+        message: "Golang QnA updated successfully.",
         qnadata: updatedQnA,
       },
       { status: 200 }
@@ -117,7 +117,7 @@ export async function PATCH(request, { params }) {
     const body = await request.json();
 
     
-    const particularQnA = javaQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
+    const particularQnA = golangQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
 
 
     if (!particularQnA) {
@@ -125,7 +125,7 @@ export async function PATCH(request, { params }) {
       return NextResponse.json(
         {
           success: false,
-          message: "JAVA QnA not found.",
+          message: "Golang QnA not found.",
         },
         { status: 404 }
       );
@@ -142,7 +142,7 @@ export async function PATCH(request, { params }) {
     return NextResponse.json(
       {
         success: true,
-        message: "JAVA QnA updated successfully.",
+        message: "Golang QnA updated successfully.",
         qnadata: updatedQnA,
       },
       { status: 200 }
@@ -175,7 +175,7 @@ export async function DELETE(request, { params }) {
     const idOfTheParticularQnA = Number(id[0]);
 
 
-    const particularQnA = javaQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
+    const particularQnA = golangQuestionAnswers.find((qna) => qna.id === idOfTheParticularQnA);
 
 
     if (!particularQnA) {
@@ -183,7 +183,7 @@ export async function DELETE(request, { params }) {
       return NextResponse.json(
         {
           success: false,
-          message: "JAVA QnA not found.",
+          message: "Golang QnA not found.",
         },
         { status: 404 }
       );
@@ -194,7 +194,7 @@ export async function DELETE(request, { params }) {
     return NextResponse.json(
     {
       success: true,
-      message: "JAVA QnA deleted successfully.",
+      message: "Golang QnA deleted successfully.",
       deletedQnA: particularQnA,
     },
     { status: 200 }

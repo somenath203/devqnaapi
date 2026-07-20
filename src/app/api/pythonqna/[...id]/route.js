@@ -18,7 +18,7 @@ export async function GET(request, { params }) {
     return NextResponse.json(
       {
         success: true,
-        message: "Connection to Python route successful.",
+        message: "Connection to Python QnA route successful.",
         qnadata: particularQnAWrtId,
       },
       { status: 200 }

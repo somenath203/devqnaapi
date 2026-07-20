@@ -35,11 +35,11 @@ const Banner = () => {
 
         Powered by
         <Badge variant="outline" className="gap-x-1.5 text-sm font-medium">
-          <SiNextdotjs className="w-4 h-4" /> NextJS
+          <SiNextdotjs className="w-4 h-4" /> Next.js
         </Badge>
         +
         <Badge variant="outline" className="gap-x-1.5 text-sm font-medium">
-          <SiTailwindcss className="w-4 h-4" /> TailwindCSS
+          <SiTailwindcss className="w-4 h-4" /> Tailwind CSS
         </Badge>
         +
         <Badge variant="outline" className="gap-x-1.5 text-sm font-medium">

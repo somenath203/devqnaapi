@@ -23,7 +23,7 @@ export async function GET(request) {
     return NextResponse.json(
       {
         success: true,
-        message: "Connection to Python route successful.",
+        message: "Connection to Python QnA route successful.",
         qnadata: qnaData,
       },
       { status: 200 }

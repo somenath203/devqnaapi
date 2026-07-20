@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { javaQuestionAnswers } from "@/qnas/JavaQnAData";
+
+import { golangQuestionAnswers } from "@/qnas/GolangQnAData";
 
 
 export async function GET(request) {
@@ -11,19 +12,19 @@ export async function GET(request) {
     const difficultyLevel = searchParams.get("difficultyLevel");
 
 
-    let qnaData = javaQuestionAnswers;
+    let qnaData = golangQuestionAnswers;
 
 
     if (difficultyLevel) {
 
-      qnaData = javaQuestionAnswers.filter((qna) => qna.difficulty.toLowerCase() === difficultyLevel.toLowerCase());
+      qnaData = golangQuestionAnswers.filter((qna) => qna.difficulty.toLowerCase() === difficultyLevel.toLowerCase());
 
     }
 
     return NextResponse.json(
       {
         success: true,
-        message: "Connection to JAVA QnA route successful.",
+        message: "Connection to Golang QnA route successful.",
         qnadata: qnaData,
       },
       { status: 200 }
@@ -53,7 +54,7 @@ export async function POST(request) {
     const body = await request.json();
 
     const newQnA = {
-      id: javaQuestionAnswers.length + 1,
+      id: golangQuestionAnswers.length + 1,
       question: body.question,
       answer: body.answer,
       difficulty: body.difficulty,
@@ -62,7 +63,7 @@ export async function POST(request) {
     return NextResponse.json(
       {
         success: true,
-        message: "JAVA QnA created successfully.",
+        message: "Golang QnA created successfully.",
         qnadata: newQnA,
       },
       { status: 201 }
