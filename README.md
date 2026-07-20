@@ -66,7 +66,6 @@ It can be used to:
 - ⚛️ **Next.js (App Router)** — frontend and API routes
 - 🎨 **Tailwind CSS** — styling
 - 🧩 **shadcn/ui** — reusable UI components
-- 🔤 **Manrope** — modern typography
 - 🖼️ **React Icons** — lightweight icon library
 
 ---
