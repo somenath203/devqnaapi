@@ -100,7 +100,7 @@ const Navbar = () => {
             className="gap-x-1.5 p-3 bg-amber-600 text-white hover:bg-amber-700 duration-200"
           >
             <a
-              href="https://github.com/somenath203"
+              href="https://github.com/somenath203/devqnaapi"
               target="_blank"
               rel="noopener noreferrer"
             >

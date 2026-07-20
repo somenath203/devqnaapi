@@ -1,6 +1,6 @@
 # {DevQnA} API 🚀
 
-A free mock REST API packed with real coding interview questions and answers — inspired by [JSONPlaceholder](https://jsonplaceholder.typicode.com/), built for developers, students, and interview preparation.
+A free mock REST API with real coding interview questions and answers, built for developers, students, and interview preparation.
 
 ---
 
@@ -10,6 +10,7 @@ A free mock REST API packed with real coding interview questions and answers —
 - [🎯 Purpose of the Project](#-purpose-of-the-project)
 - [✨ Features](#-features)
 - [🛠️ Technologies Used](#️-technologies-used)
+- [🌐 Deployment](#-deployment)
 - [💡 Inspiration](#-inspiration)
 
 ---
@@ -67,3 +68,19 @@ This project was built to solve a simple problem: sometimes you need a **real, w
 - 🧩 **shadcn/ui** — reusable UI components
 - 🔤 **Manrope** — modern typography
 - 🖼️ **React Icons** — lightweight icon library
+
+---
+
+## 🌐 Deployment
+
+The project is live and available here:
+
+🔗 **Live Demo:** https://devqna-som.netlify.app/
+
+Feel free to explore the documentation, browse the available API routes, and try the example requests directly from your browser.
+
+---
+
+## 💡 Inspiration
+
+**{DevQnA} API** is inspired by [**JSONPlaceholder**](https://jsonplaceholder.typicode.com/), one of the most popular mock REST APIs used by developers around the world.
