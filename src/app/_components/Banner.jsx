@@ -18,7 +18,7 @@ const Banner = () => {
       </Badge>
 
 
-      <h1 className="text-6xl mb-6 font-bold text-gray-900">
+      <h1 className="text-2xl lg:text-6xl mb-2 lg:mb-6 font-bold text-gray-900">
 
         <span className="text-amber-500">{`{`}</span>
         DevQnA
@@ -27,11 +27,11 @@ const Banner = () => {
 
       </h1>
 
-      <p className="text-xl text-gray-700">
-        A free fake REST API packed with coding interview questions and answers — across Python, JavaScript, Java, and Golang.
+      <p className="text-sm lg:text-xl text-gray-700">
+        A free fake REST API packed with coding interview questions and answers — across C++, Python, JavaScript, Java, and Golang.
       </p>
 
-      <p className="text-xl flex flex-wrap items-center gap-x-2 text-gray-700">
+      <p className="text-base lg:text-xl flex flex-wrap items-center gap-x-2 text-gray-700">
 
         Powered by
         <Badge variant="outline" className="gap-x-1.5 text-sm font-medium">
@@ -48,9 +48,9 @@ const Banner = () => {
 
       </p>
 
-      <p className="mt-5 text-base font-bold flex items-center gap-x-2">
+      <p className="mt-5 text-sm lg:text-base font-bold flex items-center gap-x-2">
 
-        <FiCheckCircle className="w-5 h-5 text-amber-600" />
+        <FiCheckCircle className="hidden lg:block w-5 h-5 text-amber-600" />
 
         A JSONPlaceholder-style API, but for coding interview questions.
 

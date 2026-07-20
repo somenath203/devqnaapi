@@ -223,13 +223,15 @@ const ApiRoutesList = ({ title, routes }) => {
         them.
       </p>
 
-      <Card className="border-amber-100 bg-amber-50/40 p-0 gap-0 overflow-hidden">
-        {routes.map((route, index) => (
-          <RouteRow
-            key={`${route.method}-${route.href}-${index}`}
-            route={route}
-          />
-        ))}
+      <Card className="border-amber-100 bg-amber-50/40 p-0 gap-0 overflow-x-auto">
+        <div className="min-w-160">
+          {routes.map((route, index) => (
+            <RouteRow
+              key={`${route.method}-${route.href}-${index}`}
+              route={route}
+            />
+          ))}
+        </div>
       </Card>
 
     </Container>

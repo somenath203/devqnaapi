@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# {DevQnA} API 🚀
 
-## Getting Started
+A free mock REST API packed with real coding interview questions and answers — inspired by [JSONPlaceholder](https://jsonplaceholder.typicode.com/), built for developers, students, and interview preparation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📑 Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [📖 Introduction](#-introduction)
+- [🎯 Purpose of the Project](#-purpose-of-the-project)
+- [✨ Features](#-features)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [💡 Inspiration](#-inspiration)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📖 Introduction
 
-## Learn More
+**{DevQnA} API** is a free mock REST API that serves coding interview questions and answers across multiple programming languages, including:
 
-To learn more about Next.js, take a look at the following resources:
+- 🐍 Python
+- ☕ Java
+- 🟨 JavaScript
+- ⚙️ C++
+- 🐹 Golang
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Just like JSONPlaceholder gives developers fake data to test with, **{DevQnA} API** provides real interview questions that you can build with, learn from, or integrate into your projects while practicing API development.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+No sign-up. No API key. Just fetch and go. ⚡
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Purpose of the Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was built to solve a simple problem: sometimes you need a **real, working API** to practice with instead of placeholder values like `"foo"` or `"bar"`.
+
+**{DevQnA} API** gives developers something more useful to work with:
+
+- 🧪 Test frontend applications using realistic, structured data
+- 📚 Showcase a live API example in your GitHub projects
+- 🛠️ Practice CRUD operations (Create, Read, Update, Delete)
+- 🎓 Explore real coding interview questions while learning REST APIs
+
+---
+
+## ✨ Features
+
+- 🌐 Multiple programming language routes for Python, Java, JavaScript, C++, and Golang
+- 🔍 Fetch all questions for a language (e.g. `/api/pythonqna`)
+- 🔢 Fetch a single question by its ID (e.g. `/api/pythonqna/1`)
+- 🎚️ Filter questions by difficulty (e.g. `/api/pythonqna?difficultyLevel=easy`)
+- ➕ Create a new question using `POST`
+- ✏️ Replace an existing question using `PUT`
+- 🩹 Update selected fields using `PATCH`
+- 🗑️ Delete a question using `DELETE`
+- 👀 View ready-to-use `fetch()` examples for every endpoint
+- 📋 Copy API routes and example code with a single click
+- 📱 Fully responsive across desktop, tablet, and mobile devices
+- 🎨 Clean documentation-style interface with a warm amber theme
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ **Next.js (App Router)** — frontend and API routes
+- 🎨 **Tailwind CSS** — styling
+- 🧩 **shadcn/ui** — reusable UI components
+- 🔤 **Manrope** — modern typography
+- 🖼️ **React Icons** — lightweight icon library

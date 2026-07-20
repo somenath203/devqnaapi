@@ -10,24 +10,19 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-
 const Navbar = () => {
   return (
     <div className="border-b border-b-amber-100 sticky top-0 z-50 bg-amber-50/50 backdrop-blur-md">
 
-      <Container className="flex flex-col md:flex-row items-start md:items-center justify-between py-3">
+      <Container className="flex flex-col lg:flex-row items-start lg:items-center justify-between py-3">
 
-        <Link href="/">
-
+        <Link href="/" className="mb-2 lg:mb-0">
           <h1 className="text-base font-bold text-gray-900">
-
             <span className="text-amber-500">{`{`}</span>
             DevQnA
             <span className="text-amber-500">{`}`}</span>
             <span className="text-amber-600"> API</span>
-
           </h1>
-
         </Link>
 
         <div className="flex items-center gap-x-2 md:gap-x-5">
@@ -35,7 +30,6 @@ const Navbar = () => {
           <DropdownMenu>
 
             <DropdownMenuTrigger asChild>
-
               <Button
                 variant="outline"
                 size="sm"
@@ -44,7 +38,6 @@ const Navbar = () => {
                 <FiList className="w-4 h-4" />
                 Sections
               </Button>
-
             </DropdownMenuTrigger>
 
             <DropdownMenuContent align="end" className="w-56">
@@ -119,7 +112,7 @@ const Navbar = () => {
         </div>
 
       </Container>
-      
+
     </div>
   );
 };

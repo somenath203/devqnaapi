@@ -38,21 +38,21 @@ const DemoCode = () => {
 
         </div>
 
-        <div className="p-10">
+        <div className="p-10 overflow-x-auto">
 
-          <p className="text-yellow-100 tracking-wider mb-0.5 flex flex-wrap">
+          <p className="text-yellow-100 tracking-wider mb-0.5 whitespace-nowrap text-sm lg:text-base">
             <span className="text-sky-300">fetch</span> &#x27;
             {`(${process.env.NEXT_PUBLIC_BASE_URL}/api/pythonqna/1)`}&#x27;
           </p>
 
-          <p className="text-gray-100 tracking-wider ml-10 mb-0.5">
+          <p className="text-gray-100 tracking-wider ml-10 mb-0.5 whitespace-nowrap">
             <span className="text-sky-300">.then</span>
             {`((response => response.`}
             <span className="text-sky-300">json</span>
             {`()))`}
           </p>
 
-          <p className="text-gray-100 tracking-wider ml-10">
+          <p className="text-gray-100 tracking-wider ml-10 whitespace-nowrap">
             <span className="text-sky-300">.then</span>
             {`((json => console.`}
             <span className="text-sky-300">log</span>
@@ -87,10 +87,10 @@ const DemoCode = () => {
 
         </div>
 
-        <div className="p-10 overflow-hidden">
+        <div className="p-10 overflow-x-auto">
 
           {shouldShowResultOfTestCode ? (
-            <pre className="font-mono text-base leading-8 text-gray-200 whitespace-pre-wrap wrap-break-word">
+            <pre className="font-mono text-sm lg:text-base leading-8 text-gray-200 whitespace-pre">
   {`{`}
   {"\n"}{" "} <span className="text-red-400">{'"success"'}</span>:{" "}{" "}
   <span className="text-violet-300">true</span>,
@@ -115,7 +115,7 @@ const DemoCode = () => {
   {`}`}
 </pre>
           ) : (
-            <pre className="font-mono text-base text-gray-500 whitespace-pre-wrap wrap-break-word">{`{}`}</pre>
+            <pre className="font-mono text-sm lg:text-base text-gray-500 whitespace-pre">{`{}`}</pre>
           )}
         </div>
       </div>
