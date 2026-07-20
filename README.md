@@ -27,7 +27,7 @@ A free mock REST API with real coding interview questions and answers, built for
 
 Just like JSONPlaceholder gives developers fake data to test with, **{DevQnA} API** provides real interview questions that you can build with, learn from, or integrate into your projects while practicing API development.
 
-No sign-up. No API key. Just fetch and go. ⚡
+No sign-up required. No API key required.
 
 ---
 
