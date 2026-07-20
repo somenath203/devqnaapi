@@ -77,8 +77,6 @@ The project is live and available here:
 
 🔗 **Live Demo:** https://devqna-som.netlify.app/
 
-Feel free to explore the documentation, browse the available API routes, and try the example requests directly from your browser.
-
 ---
 
 ## 💡 Inspiration
