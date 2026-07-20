@@ -10,25 +10,41 @@ import GolangQnARoutes from "./_components/GolangQnARoutes";
 const Page = () => {
   return (
     <main>
+
+      <section id="banner">
+        <Banner />
+      </section>
+
+      <section id="try-it">
+        <DemoCode />
+      </section>
+
+      <section id="when-to-use">
+        <WhenToUse />
+      </section>
+
+      <section id="python-routes">
+        <PythonQnARoutes />
+      </section>
+
+      <section id="java-routes">
+        <JavaQnARoutes />
+      </section>
+
+      <section id="javascript-routes">
+        <JavaScriptQnARoutes />
+      </section>
+
+      <section id="cpp-routes">
+        <CppQnARoutes />
+      </section>
+
+      <section id="golang-routes">
+        <GolangQnARoutes />
+      </section>
       
-      <Banner />
-
-      <DemoCode />
-
-      <WhenToUse />
-
-      <PythonQnARoutes />
-
-      <JavaQnARoutes />
-
-      <JavaScriptQnARoutes />
-
-      <CppQnARoutes />
-
-      <GolangQnARoutes />
-
     </main>
-  )
-}
+  );
+};
 
 export default Page;
