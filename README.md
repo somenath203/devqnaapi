@@ -74,7 +74,7 @@ It can be used to:
 
 The project is live and available here:
 
-🔗 **Live Demo:** https://devqna-som.netlify.app/
+🔗 **Live Demo:** https://devqnapidev.netlify.app/
 
 ---
 
